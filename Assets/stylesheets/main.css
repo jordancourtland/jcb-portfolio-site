@@ -1,0 +1,184 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; 
+}
+
+*{
+    box-sizing:border-box;
+}
+
+html, body {
+    height:100%;
+    width:100%;
+}
+
+body {
+    font-family:'Source Sans Pro', sans-serif;
+    margin:0 auto;
+}
+
+header h1 {
+    font-size:36px;
+    color:white;
+    padding-left:12px;
+    position:fixed;
+    z-index:999999;
+    top:0;
+    left:0;
+}
+
+nav {
+    position:fixed;
+    width:100%;
+    overflow:hidden;
+    font-size:18px;
+    letter-spacing:2px;
+    background-color:black;
+    z-index:999;
+}
+
+nav ul {
+    list-style:none;
+    width:80%;
+    float:right;
+    overflow:auto;
+}
+
+nav ul li{
+    width:33.333%;
+    display:block;
+    float:left;
+    text-align:center;
+}
+
+nav ul li a {
+    display:block;
+    padding:12px 0;
+    width:100%;
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+section {
+    width:100%;
+}
+
+section h2 {
+    font-size:42px;
+    color:black;
+    padding-left:6px;
+    letter-spacing:14px;
+    text-align:center;
+}
+
+section img {
+    width:100%;
+}
+
+section article {
+    width: 100%;
+    display:block;
+    font-size:16px;
+    text-align:left;
+    margin:12px;
+}
+
+section div {
+    position:relative;
+}
+
+section article img {
+    opacity:1.0;
+    display:block;
+}
+
+section article img:hover {
+    opacity:0.4; 
+}
+
+section article img {
+    width:100%;
+    max-width:300px;
+    margin: 10px auto;
+}
+
+section article p {
+    text-align:left;
+    font-size:16px;
+    padding:4px;
+}
+
+section ul {
+    padding:4px;
+}
+
+section#myself ul {
+    list-style:none;
+}
+
+section#myself img {
+    margin-top:45px;
+}
+
+@media screen and (min-width: 768px) {
+    nav {
+    
+    }
+    
+    section article {
+        margin:0 auto;
+        max-width:960px;
+        overflow:auto;
+    }
+    
+    section article p {
+        padding: 10px;
+        width:65%;
+        float:right;
+    }
+    
+    section article img {
+        float:left;
+        width:35%;
+    }
+    
+    section#myself article p {
+        width:98%;
+        float:none;
+        text-align:center;
+    }
+    
+    section#design article img {
+        width:49%;
+    }
+    
+    section#words article img {
+        width:49%;
+    }
+    
+    footer {
+        clear:both;
+    }
+}
